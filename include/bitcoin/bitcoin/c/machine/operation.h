@@ -94,7 +94,7 @@ bc_opcode_t bc_operation__opcode_from_size(size_t size);
 
 /// Compute the minimal data opcode for a given chunk of data.
 /// If a numeric code is used then corresponding data must be set to empty.
-bc_opcode_t bc_operation__opcode_from_data(const bc_data_chunk_t* data);
+bc_opcode_t bc_operation__minimal_opcode_from_data(const bc_data_chunk_t* data);
 
 /// Convert the [1..16] value to the corresponding opcode (or undefined).
 bc_opcode_t bc_operation__opcode_from_positive(uint8_t value);

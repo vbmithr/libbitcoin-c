@@ -136,14 +136,16 @@ bc_error_t bc_error_code_to_ctype(libbitcoin::error::error_code_t value)
             return bc_error__extra_coinbases;
         case libbitcoin::error::internal_duplicate:
             return bc_error__internal_duplicate;
-        case libbitcoin::error::internal_double_spend:
-            return bc_error__internal_double_spend;
+        case libbitcoin::error::block_internal_double_spend:
+            return bc_error__block_internal_double_spend;
+        case libbitcoin::error::transaction_internal_double_spend:
+            return bc_error__transaction_internal_double_spend;
         case libbitcoin::error::merkle_mismatch:
             return bc_error__merkle_mismatch;
         case libbitcoin::error::block_legacy_sigop_limit:
             return bc_error__block_legacy_sigop_limit;
-        case libbitcoin::error::non_final_transaction:
-            return bc_error__non_final_transaction;
+        case libbitcoin::error::transaction_non_final:
+            return bc_error__transaction_non_final;
         case libbitcoin::error::coinbase_height_mismatch:
             return bc_error__coinbase_height_mismatch;
         case libbitcoin::error::coinbase_value_limit:
@@ -436,14 +438,16 @@ libbitcoin::error::error_code_t bc_error_code_from_ctype(bc_error_t value)
             return libbitcoin::error::extra_coinbases;
         case bc_error__internal_duplicate:
             return libbitcoin::error::internal_duplicate;
-        case bc_error__internal_double_spend:
-            return libbitcoin::error::internal_double_spend;
+        case bc_error__block_internal_double_spend:
+            return libbitcoin::error::block_internal_double_spend;
+        case bc_error__transaction_internal_double_spend:
+            return libbitcoin::error::transaction_internal_double_spend;
         case bc_error__merkle_mismatch:
             return libbitcoin::error::merkle_mismatch;
         case bc_error__block_legacy_sigop_limit:
             return libbitcoin::error::block_legacy_sigop_limit;
-        case bc_error__non_final_transaction:
-            return libbitcoin::error::non_final_transaction;
+        case bc_error__transaction_non_final:
+            return libbitcoin::error::transaction_non_final;
         case bc_error__coinbase_height_mismatch:
             return libbitcoin::error::coinbase_height_mismatch;
         case bc_error__coinbase_value_limit:

@@ -304,19 +304,19 @@ uint64_t bc_satoshi_per_bitcoin()
     return libbitcoin::satoshi_per_bitcoin;
 }
 
-uint64_t bc_initial_block_reward_bitcoin()
-{
-    return libbitcoin::initial_block_reward_bitcoin;
-}
-uint64_t bc_initial_block_reward_satoshi()
-{
-    return libbitcoin::initial_block_reward_satoshi();
-}
+// uint64_t bc_initial_block_reward_bitcoin()
+// {
+//     return libbitcoin::initial_block_reward_bitcoin;
+// }
+// uint64_t bc_initial_block_reward_satoshi()
+// {
+//     return libbitcoin::initial_block_reward_satoshi();
+// }
 
-uint64_t bc_reward_interval()
-{
-    return libbitcoin::reward_interval;
-}
+// uint64_t bc_reward_interval()
+// {
+//     return libbitcoin::reward_interval;
+// }
 uint64_t bc_recursive_money()
 {
     return libbitcoin::recursive_money;

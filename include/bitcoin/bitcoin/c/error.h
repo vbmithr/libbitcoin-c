@@ -92,12 +92,13 @@ typedef enum bc_error_t
     bc_error__first_not_coinbase = 28,
     bc_error__extra_coinbases = 29,
     bc_error__internal_duplicate = 49,
-    bc_error__internal_double_spend = 15,
+    bc_error__block_internal_double_spend = 15,
+    bc_error__transaction_internal_double_spend = 72,
     bc_error__merkle_mismatch = 31,
     bc_error__block_legacy_sigop_limit = 30,
 
     // accept block
-    bc_error__non_final_transaction = 34,
+    bc_error__transaction_non_final = 34,
     bc_error__coinbase_height_mismatch = 37,
     bc_error__coinbase_value_limit = 41,
     bc_error__block_embedded_sigop_limit = 52,

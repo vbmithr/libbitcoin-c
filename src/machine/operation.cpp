@@ -157,10 +157,10 @@ bc_opcode_t bc_operation__opcode_from_size(size_t size)
 
 /// Compute the minimal data opcode for a given chunk of data.
 /// If a numeric code is used then corresponding data must be set to empty.
-bc_opcode_t bc_operation__opcode_from_data(const bc_data_chunk_t* data)
+bc_opcode_t bc_operation__minimal_opcode_from_data(const bc_data_chunk_t* data)
 {
     return bc_opcode_to_ctype(
-        libbitcoin::machine::operation::opcode_from_data(*data->obj));
+        libbitcoin::machine::operation::minimal_opcode_from_data(*data->obj));
 }
 
 /// Convert the [1..16] value to the corresponding opcode (or undefined).

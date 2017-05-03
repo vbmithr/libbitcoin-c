@@ -113,7 +113,7 @@ size_t bc_transaction__signature_operations(
 bool bc_transaction__is_coinbase(const bc_transaction_t* self);
 bool bc_transaction__is_null_non_coinbase(const bc_transaction_t* self);
 bool bc_transaction__is_oversized_coinbase(const bc_transaction_t* self);
-bool bc_transaction__is_immature(const bc_transaction_t* self,
+bool bc_transaction__is_mature(const bc_transaction_t* self,
     size_t target_height);
 bool bc_transaction__is_overspent(const bc_transaction_t* self);
 bool bc_transaction__is_double_spend(const bc_transaction_t* self,
